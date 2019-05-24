@@ -1,0 +1,211 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+    >
+
+        <TextView
+
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:text="English"
+                android:textColor="#34495E"
+                android:textSize="20sp"
+                android:id="@+id/English"
+                android:layout_toLeftOf="@id/translate"
+                android:layout_marginRight="80dp" android:layout_marginBottom="5dp" android:layout_marginTop="7dp"/>
+
+        <ImageView android:id="@+id/translate"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+                   tools:src="@drawable/exch"
+
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Vietnamese"
+                android:textColor="#34495E"
+                android:id="@id/text2"
+                android:layout_toRightOf="@id/translate"
+                android:textSize="20sp"
+
+                android:layout_marginLeft="60dp" android:layout_marginTop="7dp" android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="2dp">
+        <ImageView android:id="@+id/mute"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+
+                   android:src="@drawable/mute"
+                   android:layout_marginLeft="12dp"
+                   android:layout_marginTop="5dp" android:layout_marginBottom="2dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIẾNG ANH"
+                android:textColor="#333333"
+                android:layout_toRightOf="@id/mute"
+                android:textSize="20dp"
+
+                android:layout_marginLeft="5dp" android:layout_marginTop="10dp"/>
+
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+
+                android:id="@+id/edEnglish"
+                android:layout_below="@id/mute"
+
+        />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="75dp" android:layout_marginTop="5dp">
+
+
+        <ImageView android:id="@+id/camera"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+
+                   android:src="@drawable/ca48"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="2dp"/>
+
+        <ImageView android:id="@+id/voice"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+
+                   android:src="@drawable/voice50"
+                   android:layout_toLeftOf="@id/camera"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="2dp"
+                   android:layout_marginRight="90dp"/>
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Máy ảnh"
+                android:textColor="#34495E"
+                android:id="@id/text2"
+                android:layout_below="@id/camera"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginBottom="2dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Giọng nói"
+                android:textColor="#34495E"
+                android:id="@id/text2"
+                android:layout_below="@id/voice"
+                android:textSize="18dp"
+                android:layout_toLeftOf="@id/camera"
+
+                android:layout_marginBottom="2dp" android:layout_marginRight="80dp"/>
+
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/translate"
+                android:textColor="#FFFFFF"
+                android:text="TRANSLATE"
+                android:layout_toRightOf="@id/camera"
+
+
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="220dp"
+            android:layout_marginTop="5dp" android:layout_marginBottom="2dp">
+        <ImageView android:id="@+id/mute2"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+
+                   android:src="@drawable/mute"
+                   android:layout_marginLeft="12dp" android:layout_marginTop="5dp" android:layout_marginBottom="2dp"/>
+        <TextView
+                android:id="@+id/tiengviet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIẾNG VIỆT"
+                android:textColor="#333333"
+                android:layout_toRightOf="@id/mute2"
+                android:textSize="20dp"
+
+                android:layout_marginLeft="5dp" android:layout_marginTop="10dp"/>
+
+        <ImageView android:id="@+id/save"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/save48"
+
+                   android:layout_toRightOf="@id/tiengviet"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginLeft="90dp"/>
+
+        <ImageView android:id="@+id/copy"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+
+                   android:src="@drawable/copy2"
+                   android:layout_toRightOf="@id/save"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginLeft="20dp"/>
+
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+
+                android:id="@+id/edVietnam"
+                android:layout_below="@id/mute2"
+
+        />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
